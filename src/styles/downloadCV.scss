@@ -1,0 +1,39 @@
+.section-downloadCV {
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    padding: 60px;
+    
+    div {
+        margin-top: 120px;
+        align-self: start;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        h2 {
+            font-weight: 600;
+            color: #f7f7f7;
+        }
+
+        p {
+            color: #fff;
+            font-weight: 200;
+        }
+
+        a {
+            max-width: 200px;
+            width: 100%;
+            color: #fff;
+            padding: 15px 40px;
+            border-radius: 5px;
+            border: 2px solid white;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
