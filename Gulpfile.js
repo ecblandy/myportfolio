@@ -12,9 +12,8 @@ function compilaSass() {
 }
 
 function compilaJavaScript(){
-    return gulp.src('../src/scripts/*')
+    return gulp.src('./src/scripts/**/*')
     .pipe(uglify())
-    .pipe(rename('main.min.js'))
     .pipe(gulp.dest('./dist/scripts'))
 }
 
