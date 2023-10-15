@@ -12,7 +12,7 @@ function compilaSass() {
 }
 
 function compilaJavaScript(){
-    return gulp.src('./src/scripts/**/*')
+    return gulp.src('./src/scripts/*.js')
     .pipe(uglify())
     .pipe(gulp.dest('./dist/scripts'))
 }
@@ -26,6 +26,6 @@ function compilaImagem() {
 
 exports.default = gulp.parallel(compilaSass, compilaJavaScript, compilaImagem)
 exports.watch = ()=> {
-    gulp.watch('src/styles/**/*', gulp.parallel(compilaSass))
-    gulp.watch('../src/scripts/*', gulp.parallel(compilaJavaScript))
+    gulp.watch('src/styles/**/*.scss', gulp.parallel(compilaSass))
+    gulp.watch('../src/scripts/*.js', gulp.parallel(compilaJavaScript))
 }
